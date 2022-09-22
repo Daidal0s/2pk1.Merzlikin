@@ -16,9 +16,7 @@
             for(byte i = 0; i < 7; i++)
             {
                 for(byte c = 0; c < 7; c++)
-                {
                     Console.Write('#');
-                }
                 Console.Write('\n');
             }
 
