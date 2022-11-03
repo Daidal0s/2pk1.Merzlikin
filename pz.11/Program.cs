@@ -2,6 +2,12 @@
 {
     internal class Program
     {
+        static string getName(ref string line)
+        {
+            string name = line.Substring(0, line.IndexOf("\t"));
+
+            return name;
+        }
         static void Main(string[] args)
         {
             const string path = "DataStud.txt";
@@ -12,6 +18,7 @@
             
             while ((line = sr.ReadLine()) != null)
             {
+                string name = getName(ref line);
                 int temp = 0;
                 for (int iii = 0; iii < line.Length; iii++)
                 {
@@ -29,8 +36,7 @@
                         iii += 3;
                     }
                 }
-
-                Console.WriteLine(average/temp);
+                Console.WriteLine($"Средний балл студента {name}\t=\t{(average/temp)}");
                 average = 0;
             }
             
