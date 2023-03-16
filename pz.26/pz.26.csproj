@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>pz._26</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\img\bold.png" />
+    <None Remove="src\img\checked.png" />
+    <None Remove="src\img\del.png" />
+    <None Remove="src\img\italic.png" />
+    <None Remove="src\img\save.png" />
+    <None Remove="src\img\underline.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="src\img\bold.png" />
+    <Resource Include="src\img\checked.png" />
+    <Resource Include="src\img\del.png" />
+    <Resource Include="src\img\italic.png" />
+    <Resource Include="src\img\save.png" />
+    <Resource Include="src\img\underline.png" />
+  </ItemGroup>
+
+</Project>
